@@ -1,10 +1,16 @@
 import React, { useState } from 'react'
-import { IconButton,Button,Flex } from '@chakra-ui/react';
+import { IconButton,Button,Flex, MenuDivider ,Tag ,Avatar ,TagLabel, Divider, Grid, Heading } from '@chakra-ui/react';
 import { HamburgerIcon , CloseIcon } from '@chakra-ui/icons';
+import { useTranslation } from 'next-i18next'
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 function Hamburger() {
     const [display, changeDisplay] = useState('none')
 
+    const router = useRouter()
+    
+    const { t } = useTranslation()
   return (
     <div className='hamburger'>
       <IconButton
@@ -40,26 +46,49 @@ function Hamburger() {
         <Flex flexDir="column" align="center">
             
             <Button as="a" variant="ghost" aria-label="ACCOMMODATION" my={5} w="100%">
-            ACCOMMODATION
+            {t('common:ACCOMMODATION')}
             </Button>
             <Button as="a" variant="ghost" aria-label="RESTAURANTS" my={5} w="100%">
-            RESTAURANTS
+            {t('common:RESTAURANTS')}
             </Button>
             <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
-            ACTIVITIES
+            {t('common:ACTIVITIES')}
             </Button>
             <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
-            SPA & WELLNESS
+            {t('common:SPA&WELLNESS')}
             </Button>
             <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
-            CONFERENCE
+            {t('common:CONFERENCE')}
             </Button>
             <Button as="a" variant="ghost" aria-label="Contact" my={5} w="100%">
-            SPORT
+            {t('common:SPORT')}
             </Button>
             
         </Flex>
+        <Divider mb={`50px`}/>
+            <h2>{t('common:ChooseYourLanguage')}</h2>
+            <Flex justifyContent={'center'} p={'10'} gap={3} textAlign={'center'}>
+            {router.locales.map((locale) => (
+              <Link href={router.asPath} locale={locale}>
+            <Tag size='lg' colorScheme={"teal"} p={3} borderRadius='full' key={locale}>
+            
+              <TagLabel>{locale}</TagLabel>
+            </Tag>
+            </Link>
+            ))} 
+            </Flex>
+            
         </Flex>
+        <style jsx>
+          {`
+          h2 {
+            font-size:15px;
+            text-align:center;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+          }
+          `}
+        </style>
     </div>
   )
 }

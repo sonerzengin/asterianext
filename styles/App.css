@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap");
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -10,14 +14,16 @@
 
 .header {
   height: 120px;
+  display: flex;
+  align-items: center;
   background-color: #ECFAFF;
 }
 
 .menu__list {
-  font-weight: 400;
+  font-weight: 300;
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: nowrap;
   padding: 40px 0px;
   color: #585858;
@@ -31,12 +37,16 @@
 
 .menu__left {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+  color: #0D0D2D;
+  font-weight: 300 !important;
+  font-family: "Open Sans", sans-serif;
 }
 
 .menu__line {
-  width: 1px;
+  width: 0.2px;
   height: 24px;
   background-color: #0D0D2D;
 }
@@ -273,7 +283,7 @@
 }
 
 .navbar {
-  display: block;
+  display: flex;
 }
 
 .hamburger {
@@ -299,8 +309,8 @@
   .section2__orangebox {
     width: 45% !important;
   }
-  .navbar {
-    display: none !important;
+  .menu__left {
+    display: none;
   }
   .menu__list {
     display: none !important;

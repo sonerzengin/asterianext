@@ -1,7 +1,7 @@
 module.exports = {
     i18n: {
-      defaultLocale: 'en',
-      locales: ['en','tr'],
-      reloadOnPrerender : true,
+      defaultLocale: 'EN',
+      locales: ['EN','RU','TR'],
+      
     },
   };

@@ -1,8 +1,8 @@
 import React from 'react'
-
+import { useTranslation } from 'next-i18next'
 
 function Footer() {
-   
+    const { t } = useTranslation()
   return (
     <div className='footer'>
     <div className='container'>
@@ -12,31 +12,31 @@ function Footer() {
             
             <div>
                     <ul className='footer__list'>
-                        <li>HOMEPAGE
+                        <li>{t('common:HOMEPAGE')}
                         <div className="footer__line"></div>
                         </li>
-                        <li>RESTAURANTS
+                        <li>{t('common:RESTAURANTS')}
                         <div className="footer__line"></div>
                         </li>
-                        <li>SPA & WELLNESS
+                        <li>{t('common:SPA&WELLNESS')}
                         <div className="footer__line"></div>
                         </li>
-                        <li>CONFERENCE
+                        <li>{t('common:CONFERENCE')}
                         <div className="footer__line"></div>
                         </li>
-                        <li>MARRIAGE & HONEYMOON
+                        <li>{t('common:MARRIAGE&HONEYMOON')}
                         <div className="footer__line"></div>
                         </li>
-                        <li>ACCOMMODATION
+                        <li>{t('common:ACCOMMODATION')}
                         <div className="footer__line"></div>
                         </li>
-                        <li>ACTIVITIES
+                        <li>{t('common:ACTIVITIES')}
                         <div className="footer__line"></div>
                         </li>
-                        <li>ASTERIA KIDS CLUB
+                        <li>{t('common:ASTERIAKIDSCLUB')}
                         <div className="footer__line"></div>
                         </li>
-                        <li>SPORT
+                        <li>{t('common:SPORT')}
                         <div className="footer__line"></div>
                         </li>
                     </ul>
@@ -45,26 +45,26 @@ function Footer() {
             <div className="footer__sub">
             <div >
                     <ul className='footer__list2'>
-                        <li>FACT SHEET
+                        <li>{t('common:FACTSHEET')}
                             <div className="footer__line"></div>
                         </li>
-                        <li>MULTIMEDIA
+                        <li>{t('common:MULTIMEDIA')}
                         <div className="footer__line"></div>
                         </li>
-                        <li>PROTECTION OF PERSONAL DATA
+                        <li>{t('common:PROTECTIONOFPERSONALDATA')}
                         <div className="footer__line"></div>
                         </li>
-                        <li>AWARDS
+                        <li>{t('common:AWARDS')}
                         <div className="footer__line"></div>
                         </li>
-                        <li>CONTACT
+                        <li>{t('common:CONTACT')}
                         <div className="footer__line"></div>
                         </li>
                     </ul>
                 </div>
                
                 <div className='footer__bottom'>
-                    © 2018 All Rights Reserved.
+                {t('common:©2018AllRightsReserved')}
                 </div>
             </div>
             

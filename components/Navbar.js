@@ -21,36 +21,28 @@ function Navbar() {
 
   return (
     <div className='row '>
-        <div className="col-md-3 col-xxl-2 menu__left navbar">
+        <div className="col-md-3 col-xxl-2 menu__left ">
         <div>
         <Menu>
           <MenuButton
           p={0}
           transition='all 0.2s'
-          
-          fontSize={14}
-          _hover={{ fontWeight: 600  }}
+          fontWeight={300}
+          fontSize={13}
+          _hover={{ fontWeight: 700  }}
           
           >
            {i18n.language} <ChevronDownIcon />
           </MenuButton>
-          <MenuList>
+          <MenuList fontSize={13} >
           {router.locales.map((locale) => (
-          <MenuOptionGroup type="radio" defaultValue="spanish">
+          <MenuOptionGroup type="radio" defaultValue="Turkish">
           <Link href={router.asPath} locale={locale}>
             <MenuItemOption value="">{locale}</MenuItemOption>
           </Link>
           </MenuOptionGroup>
            ))} 
           </MenuList>
-          {/* {router.locales.map((locale) => (
-          <MenuList fontSize={14} transition='all 0.2s' key={locale} w={'10px'}>
-            <Link href={router.asPath} locale={locale}>
-            <MenuItem >{locale}</MenuItem>
-            </Link>
-            
-          </MenuList>
-          ))} */}
           
         </Menu>
         </div>
@@ -60,18 +52,20 @@ function Navbar() {
           p={0}
           transition='all 0.2s'
           borderRadius='md'
-          fontSize={14}
-          _hover={{ fontWeight: 600  }}
-          
+          fontSize={13}
+          _hover={{ fontWeight: 700  }}
+          fontWeight={300}
           
           >
-           OUR HOTELS <ChevronDownIcon />
+           {t('common:OurHotels')}<ChevronDownIcon />
           </MenuButton>
-          <MenuList fontSize={14} transition='all 0.2s'>
+          <MenuList fontSize={13} transition='all 0.2s'>
             <MenuItem>ASTERIA KEMER RESORT</MenuItem>
             <MenuItem>ASTERIA BODRUM RESORT</MenuItem>
             <MenuItem>ASTERIA FAMILY SUNNY BEACH</MenuItem>
-            
+            <MenuItem>ASTERIA VENUS DIDIM</MenuItem>
+            <MenuItem>ASTERIA ZEUS DIDIM</MenuItem>
+            <MenuItem>ASTERIA KREMLIN PALACE</MenuItem>
           </MenuList>
         </Menu>
         </div>
@@ -81,11 +75,11 @@ function Navbar() {
             <ul className='menu__list'>
                 
                 <li>{t('common:ACCOMMODATION')}</li>
-                <li>{t('common:RESTAURANTS')} </li>
-                <li>ACTIVITIES</li>
-                <li>SPA & WELLNESS</li>
-                <li>CONFERENCE</li>
-                <li>SPORT</li>
+                <li>{t('common:RESTAURANTS')}</li>
+                <li>{t('common:ACTIVITIES')}</li>
+                <li>{t('common:SPA&WELLNESS')}</li>
+                <li>{t('common:CONFERENCE')}</li>
+                <li>{t('common:SPORT')}</li>
                 
             </ul>
             
