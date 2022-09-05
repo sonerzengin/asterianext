@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap");
+.App {
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo {
+  width: 100px;
+  height: 94px;
+}
+
+.header {
+  height: 120px;
+  background-color: #ECFAFF;
+}
+
+.menu__list {
+  font-weight: 400;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  padding: 40px 0px;
+  color: #585858;
+  font-size: 14px;
+}
+.menu__list li:hover {
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.menu__left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__line {
+  width: 1px;
+  height: 24px;
+  background-color: #0D0D2D;
+}
+
+.asteriahotel__img {
+  max-height: 600px;
+}
+
+.section1 {
+  margin: 214px 0;
+}
+.section1 div {
+  padding-bottom: 5px;
+}
+
+.section1__left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-evenly;
+}
+.section1__left .section1__title {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #0D0D2D;
+}
+.section1__left .section1__subtitle {
+  font-size: 25px;
+  line-height: 27.5px;
+  color: #C38976;
+  font-weight: 400;
+}
+.section1__left .section1__text {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24.82px;
+}
+.section1__left .section1__text p {
+  padding: 5px 0;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 214px;
+}
+.section2 div {
+  padding-bottom: 10px;
+}
+.section2 .baslik {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #0D0D2D;
+}
+.section2 .altbaslik {
+  font-size: 25px;
+  line-height: 27.5px;
+  color: #C38976;
+  font-weight: 400;
+}
+.section2 div:nth-child(3) {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24.82px;
+  padding: 0 50px;
+  margin-bottom: 10px;
+}
+.section2 div:nth-child(4) {
+  display: flex;
+  justify-content: right;
+}
+.section2 div:nth-child(4) .section2__orangebox {
+  position: absolute;
+  margin-top: 57px;
+  margin-right: 0;
+  width: 500px;
+  height: 100px;
+  background-color: #E7A954;
+  z-index: 2;
+  text-align: left;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section2 div:nth-child(4) .section2__orangebox:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0 30px 0 48px;
+}
+.section2 div:nth-child(4) .section2__orangebox p:first-child {
+  font-size: 36px;
+  line-height: 36px;
+  color: #0D0D2D;
+}
+.section2 div:nth-child(4) .section2__orangebox p:nth-child(2) {
+  font-size: 24px;
+  line-height: 26px;
+  color: #fff;
+  margin-top: -9px;
+}
+.section2 div:nth-child(4) .section2__orangebox .section2__icon {
+  width: 60px;
+  height: auto;
+  padding: 7px;
+  border: 1px solid #000;
+  border-radius: 50px;
+}
+
+.section3 {
+  height: 180px;
+  background-color: #F8F8F8;
+}
+
+.owl__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 10;
+}
+.owl__items h3 {
+  text-align: right;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+}
+.owl__items .carousel__img {
+  height: 219px;
+  border-radius: 8px;
+}
+.owl__items .owl__icon {
+  width: 40px !important;
+  margin-top: -20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.section3__logo {
+  width: 100px;
+  height: 94px;
+}
+
+.section3__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 180px;
+  justify-content: space-evenly;
+  padding: 20px;
+  padding-top: 30px;
+}
+.section3__items p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.section3__owl {
+  margin-top: 30px !important;
+}
+
+.footer {
+  background-color: #DEF6FF;
+}
+.footer .footer__intro {
+  padding-top: 110px;
+}
+.footer .footer__list {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  list-style: none;
+  border-bottom: 1px solid #585858;
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  row-gap: 12px;
+  padding: 20px 0px;
+  color: #585858;
+  font-size: 14px;
+}
+.footer .footer__list li:hover {
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer .footer__list li:hover .footer__line {
+  width: 58px;
+  transition: all 0.7s ease;
+}
+.footer .footer__list2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  row-gap: 12px;
+  padding: 20px 0px;
+  color: #585858;
+  font-size: 14px;
+}
+.footer .footer__list2 li:hover {
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer .footer__list2 li:hover .footer__line {
+  width: 58px;
+  transition: all 0.7s ease;
+}
+.footer .footer__line {
+  width: 0px;
+  height: 2px;
+  background-color: #DFCDA5;
+}
+.footer .footer__sub {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #585858;
+}
+.footer .footer__sub div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  color: #585858;
+}
+
+.navbar {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+}
+
+.asteriahotel__mobilimg {
+  display: none;
+}
+
+@media (max-width: 1398.98px) {
+  .footer__list2 {
+    grid-template-columns: 1.7fr 1.7fr 2fr !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .footer__sub {
+    flex-direction: column;
+  }
+  .footer__list {
+    grid-template-columns: repeat(3, 2fr) !important;
+  }
+  .section2__orangebox {
+    width: 45% !important;
+  }
+  .navbar {
+    display: none !important;
+  }
+  .menu__list {
+    display: none !important;
+  }
+  .header__content {
+    display: flex !important;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .hamburger {
+    display: block;
+  }
+  .footer__list2 {
+    border-bottom: 1px solid #585858;
+  }
+  .footer__bottom {
+    margin: 15px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .footer {
+    padding-top: 220px;
+  }
+  .baslik {
+    text-align: left !important;
+    font-size: 35px !important;
+    font-weight: 400;
+    line-height: 35px !important;
+    color: #0D0D2D;
+  }
+  .section2 {
+    text-align: left !important;
+  }
+  .section2 div:nth-child(3) {
+    padding: 0;
+  }
+  .section2 .section2__orangebox {
+    margin-top: 150px !important;
+    height: 58px !important;
+    width: 290px !important;
+  }
+  .section2 .section2__orangebox div {
+    padding-top: 5px;
+  }
+  .section2 .section2__orangebox div p:first-child {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+  }
+  .section2 .section2__orangebox div p:nth-child(2) {
+    display: none;
+  }
+  .section2 .section2__orangebox .section2__icon {
+    width: 30px !important;
+    padding: 5px !important;
+  }
+  .section1__title {
+    font-size: 35px !important;
+    font-weight: 400;
+    line-height: 35px !important;
+    color: #0D0D2D;
+  }
+  .section3__items {
+    align-items: flex-start !important;
+  }
+  .section3__items p {
+    display: none;
+  }
+  .footer__sub .footer__bottom {
+    text-align: center !important;
+  }
+}
+@media (max-width: 575.98px) {
+  .asteriahotel__img {
+    display: none;
+  }
+  .asteriahotel__mobilimg {
+    display: block;
+  }
+  .footer__list {
+    grid-template-columns: repeat(2, 2fr) !important;
+  }
+  .footer__list2 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .owl__items h3 {
+    font-weight: 300 !important;
+  }
+  .footer__bottom {
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=App.css.map */
