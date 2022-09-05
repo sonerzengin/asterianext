@@ -69,8 +69,8 @@ function Hamburger() {
             <h2>{t('common:ChooseYourLanguage')}</h2>
             <Flex justifyContent={'center'} p={'10'} gap={3} textAlign={'center'}>
             {router.locales.map((locale) => (
-              <Link href={router.asPath} locale={locale}>
-            <Tag size='lg' colorScheme={"teal"} p={3} borderRadius='full' key={locale}>
+              <Link href={router.asPath} locale={locale} key={locale}>
+            <Tag size='lg' colorScheme={"teal"} p={3} borderRadius='full' >
             
               <TagLabel>{locale}</TagLabel>
             </Tag>

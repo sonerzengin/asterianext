@@ -36,9 +36,9 @@ function Navbar() {
           </MenuButton>
           <MenuList fontSize={13} >
           {router.locales.map((locale) => (
-          <MenuOptionGroup type="radio" defaultValue="Turkish">
-          <Link href={router.asPath} locale={locale}>
-            <MenuItemOption value="">{locale}</MenuItemOption>
+          <MenuOptionGroup type="radio" defaultValue="Turkish" key={locale} >
+          <Link href={router.asPath} locale={locale} >
+            <MenuItemOption >{locale}</MenuItemOption>
           </Link>
           </MenuOptionGroup>
            ))} 

@@ -19,7 +19,7 @@ function Section2() {
             <div><Image src='/thin-arrow-png-6.png' className='section2__icon' /></div>
         </div>
         <div className='section2img'>
-        <Image src='/section2-img.jfif' />
+        <Image src='/section2-img.jpg' />
         </div>
         
       </div>
