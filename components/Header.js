@@ -1,10 +1,12 @@
-import { Flex } from '@chakra-ui/react'
+import { useTranslation } from 'next-i18next';
 import React from 'react'
 import Hamburger from './Hamburger'
 import Logo from './Logo'
 import Navbar from './Navbar'
 
 function Header() {
+  const { t } = useTranslation('home');
+  
   return (
     <div className='header'>
       <div className="container ">

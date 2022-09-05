@@ -2,6 +2,7 @@ import '../styles/App.css'
 import { ChakraProvider } from '@chakra-ui/react';
 import { extendTheme } from '@chakra-ui/react'
 import 'bootstrap/dist/css/bootstrap.css';
+import { appWithTranslation } from 'next-i18next';
 
 
 const colors = {
@@ -24,4 +25,4 @@ function MyApp({ Component, pageProps }) {
           )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp);

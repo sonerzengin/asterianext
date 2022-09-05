@@ -1,3 +1,5 @@
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import Head from 'next/head'
 import Header from '../components/Header'
 import Img from '../components/Img'
@@ -7,7 +9,9 @@ import Section3 from '../components/Section3'
 import Footer from '../components/Footer'
 
 export default function Home() {
- 
+  
+  
+
   return (
     <div className='app'>
       <Head>
@@ -28,4 +32,15 @@ export default function Home() {
       
     </div>
   )
+}
+
+//Index e Locale probs u geciyor
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+      
+    },
+  };
 }
