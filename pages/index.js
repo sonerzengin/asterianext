@@ -19,7 +19,7 @@ export default function Home() {
         <meta name="description" content="Asteria Hotels 2022 .All rights reserved" />
         <link rel="icon" href="/asteria-thumbnail.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" />
         
       </Head>
