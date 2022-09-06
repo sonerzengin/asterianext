@@ -46,27 +46,27 @@ function Owl() {
                <div className='owl__items'>
                 <h3>ASTERIA<br/>BODRUM RESORT</h3>
                 <Image className="carousel__img" src= '/asteria-bodrum.jpg' alt='bodrum'/>
-                <Image src='/arrow-right.png' className='owl__icon' />
+                <Image src='/arrow-right.png' className='owl__icon' alt='arrow'/>
                 </div>  
                <div className='owl__items'>
                <h3>ASTERIA<br/>KEMER RESORT</h3>
                 <Image  className="carousel__img" src= '/asteria-didim.jpg' alt='asteria didim' />
-                <Image src='/arrow-right.png' className='owl__icon' />
+                <Image src='/arrow-right.png' className='owl__icon' alt='arrow'/>
                 </div>  
                <div className='owl__items'>
                <h3>ASTERIA<br/>KREMLIN PALACE</h3>
                 <Image  className="carousel__img" src= '/asteria-kemer.jpg' alt='asteria kemer'/>
-                <Image src='/arrow-right.png' className='owl__icon' />
+                <Image src='/arrow-right.png' className='owl__icon' alt='arrow'/>
                 </div>  
                <div className='owl__items'>
                <h3>ASTERIA<br/>ZEUS DİDİM</h3>
                 <Image  className="carousel__img" src= '/asteria-kremlin.jpg' alt='asteria kremlin'/>
-                <Image src='/arrow-right.png' className='owl__icon' />
+                <Image src='/arrow-right.png' className='owl__icon' alt='arrow'/>
                 </div>  
                <div className='owl__items'>
                <h3>ASTERIA<br/>VENUS DİDİM</h3>
                 <Image className="carousel__img" src= '/asteria-didim2.jpg' alt='asteria didim2'/>
-                <Image src='/arrow-right.png' className='owl__icon' />
+                <Image src='/arrow-right.png' className='owl__icon' alt='arrow'/>
                 </div>  
                  
           </OwlCarousel>  

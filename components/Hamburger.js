@@ -66,7 +66,7 @@ function Hamburger() {
             
         </Flex>
         <Divider mb={`50px`}/>
-            <h2>{t('common:ChooseYourLanguage')}</h2>
+            <h2 className='hamburger__language'>{t('common:ChooseYourLanguage')}</h2>
             <Flex justifyContent={'center'} p={'10'} gap={3} textAlign={'center'}>
             {router.locales.map((locale) => (
               <Link href={router.asPath} locale={locale} key={locale}>
@@ -79,16 +79,7 @@ function Hamburger() {
             </Flex>
             
         </Flex>
-        <style jsx>
-          {`
-          h2 {
-            font-size:15px;
-            text-align:center;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-          }
-          `}
-        </style>
+        
     </div>
   )
 }
