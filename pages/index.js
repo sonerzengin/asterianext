@@ -36,7 +36,7 @@ export default function Home() {
 }
 
 //Index e Locale probs u geciyor
-
+// 
 export async function getStaticProps({ locale }) {
   return {
     props: {
